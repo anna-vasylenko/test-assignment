@@ -145,6 +145,8 @@ body {
   display: flex;
   flex-direction: column;
   gap: 8px;
+  list-style: decimal;
+  padding-left: 22px;
 }
 /* #endregion mobile styles */
 
