@@ -1,0 +1,225 @@
+/* #region reset */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ol,
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  font-family: inherit;
+  color: currentColor;
+  text-decoration: none;
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  width: 100%;
+  height: auto;
+}
+/* #endregion reset */
+
+/* #region common styles */
+
+body {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: black;
+}
+
+.container {
+  max-width: 1440px;
+  padding: 0 16px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 22px;
+  }
+
+  .container {
+    padding: 0 32px;
+  }
+}
+/* #endregion common styles */
+
+/* #region mobile styles */
+
+.main-title {
+  text-align: center;
+  font-size: 32px;
+  padding: 8px;
+}
+
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.title {
+  font-size: 26px;
+  text-align: center;
+  padding-top: 16px;
+  padding-bottom: 8px;
+}
+
+.types-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  margin: 0 auto;
+  width: 80%;
+  padding: 8px;
+  border: 1px solid black;
+  border-bottom: none;
+}
+
+.types-item:nth-child(5) {
+  border-bottom: 1px solid black;
+}
+
+.item-img {
+  width: 160px;
+  height: 160px;
+}
+
+.params-list {
+  width: 100%;
+  list-style: disc;
+  padding-left: 16px;
+}
+
+.features-img {
+  max-width: 80%;
+  max-height: auto;
+  margin: 0 auto;
+  padding-bottom: 8px;
+}
+
+.item-title {
+  text-align: center;
+  font-size: 22px;
+  padding-top: 12px;
+  padding-bottom: 6px;
+}
+
+.features-desc-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+/* #endregion mobile styles */
+
+/* #region tablet styles */
+
+@media screen and (min-width: 768px) {
+  .main-title {
+    font-size: 50px;
+    padding: 20px;
+  }
+
+  .text-wrapper {
+    gap: 16px;
+  }
+
+  .title {
+    font-size: 36px;
+    padding-top: 32px;
+    padding-bottom: 16px;
+  }
+
+  .types-item {
+    flex-direction: row;
+    gap: 22px;
+    width: 100%;
+    padding: 16px;
+  }
+
+  .item-img {
+    width: 240px;
+    height: 240px;
+  }
+
+  .params-list {
+    padding-left: 32px;
+  }
+
+  .features-img {
+    width: 320px;
+    height: 320px;
+    float: left;
+    margin: 0 16px 16px 0;
+  }
+
+  .item-title {
+    text-align: center;
+    font-size: 26px;
+    padding-top: 16px;
+    padding-bottom: 8px;
+  }
+
+  .features-desc-list {
+    gap: 16px;
+  }
+}
+/* #endregion tablet styles */
+
+/* #region desktop styles */
+
+@media screen and (min-width: 1280px) {
+  .main-title {
+    font-size: 80px;
+  }
+  .types-item {
+    gap: 36px;
+    padding: 24px;
+  }
+
+  .item-img {
+    width: 300px;
+    height: 300px;
+  }
+
+  .features-img {
+    margin: 0 32px 32px 0;
+  }
+}
+/* #endregion desktop styles */
